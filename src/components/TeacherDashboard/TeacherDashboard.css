@@ -1,0 +1,147 @@
+.teacher-dashboard {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.teacher-dashboard h2 {
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.table-container {
+  overflow-x: auto;
+  margin: 20px 0;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  padding: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+th {
+  background-color: #f8f9fa;
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+tr:nth-child(even) {
+  background-color: #f8f9fa;
+}
+
+.editable {
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.editable:hover {
+  background-color: #e3f2fd;
+}
+
+.editable input {
+  width: 60px;
+  padding: 4px 8px;
+  border: 2px solid #007bff;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.editable input:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(0,123,255,0.25);
+}
+
+.subjects-cell {
+  padding: 0 !important;
+}
+
+.subject-row {
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+}
+
+.subject-row:last-child {
+  border-bottom: none;
+}
+
+.subject-name {
+  font-weight: 600;
+  color: #2c3e50;
+  font-size: 1.1em;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.subject-data {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.data-item {
+  background: #f8f9fa;
+  padding: 6px 12px;
+  border-radius: 4px;
+  min-width: 120px;
+}
+
+.data-item.editable:hover {
+  background: #e3f2fd;
+}
+
+.mark-value, .attendance-value {
+  color: #2c3e50;
+  font-weight: 500;
+}
+
+.data-item input {
+  width: 60px;
+  padding: 2px 6px;
+  margin-left: 8px;
+}
+
+.logout-btn {
+  background: #e74c3c;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 20px auto;
+  display: block;
+}
+
+.logout-btn:hover {
+  background: #c0392b;
+}
+
+/* Add instruction tooltip */
+.editable::after {
+  content: 'Click to edit';
+  position: absolute;
+  background: #333;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  opacity: 0;
+  transition: opacity 0.2s;
+  pointer-events: none;
+}
+
+.editable:hover::after {
+  opacity: 0.9;
+}
