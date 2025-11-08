@@ -48,7 +48,8 @@ function App() {
     }
   }, []);
   return (
-    <Router>
+    // Use PUBLIC_URL as basename so routing works when deployed to GitHub Pages
+    <Router basename={process.env.PUBLIC_URL}>
       <div className="App">
         <Routes>
           <Route path="/" element={<Login />} />
