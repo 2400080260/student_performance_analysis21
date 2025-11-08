@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/student_performance_analysis21/static/css/main.e95c5595.css",
+    "main.js": "/student_performance_analysis21/static/js/main.bc6d7d82.js",
+    "static/js/453.82dd7163.chunk.js": "/student_performance_analysis21/static/js/453.82dd7163.chunk.js",
+    "index.html": "/student_performance_analysis21/index.html",
+    "main.e95c5595.css.map": "/student_performance_analysis21/static/css/main.e95c5595.css.map",
+    "main.bc6d7d82.js.map": "/student_performance_analysis21/static/js/main.bc6d7d82.js.map",
+    "453.82dd7163.chunk.js.map": "/student_performance_analysis21/static/js/453.82dd7163.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e95c5595.css",
+    "static/js/main.bc6d7d82.js"
+  ]
+}
