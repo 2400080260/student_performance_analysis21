@@ -3,9 +3,6 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Poppins", sans-serif;
-  /* Use uploaded teacher background image from public/ */
-  background: url('/teacher-background-f2xrvs0eixuq26u9.jpg') no-repeat center center fixed;
-  background-size: cover;
 }
 
 /* Glassmorphism container */
