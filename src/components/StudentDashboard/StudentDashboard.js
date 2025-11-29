@@ -74,7 +74,7 @@ const StudentDashboard = () => {
     <div 
       className="dashboard"
       style={{
-        backgroundImage: `linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url('${process.env.PUBLIC_URL}/manki-kim-PH5DULat9tE-unsplash.jpg?v=20251129')`,
+        backgroundImage: `linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url('${process.env.PUBLIC_URL}/manki-kim-PH5DULat9tE-unsplash-v2.jpg')`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundAttachment: 'fixed',
