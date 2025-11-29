@@ -1,91 +1,125 @@
-.teacher-dashboard {
-  padding: 48px 20px;
-  max-width: 1200px;
-  margin: 0 auto;
-  /* soft diagonal pattern background (SVG data URI) */
-  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1200' height='800' viewBox='0 0 1200 800'><defs><linearGradient id='tg' x1='0' x2='1'><stop stop-color='%23fff7f0' offset='0'/><stop stop-color='%23f0fbff' offset='1'/></linearGradient></defs><rect width='100%' height='100%' fill='url(%23tg)'/><pattern id='p' width='80' height='80' patternUnits='userSpaceOnUse'><path d='M0 80 L80 0' stroke='%23e6f0ff' stroke-width='1' stroke-opacity='0.14'/></pattern><rect width='100%' height='100%' fill='url(%23p)' opacity='0.6'/></svg>");
+/* Full-screen background with Unsplash image */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  /* Use uploaded teacher background image from public/ */
+  background: url('/teacher-background-f2xrvs0eixuq26u9.jpg') no-repeat center center fixed;
   background-size: cover;
-  background-position: center;
 }
 
+/* Glassmorphism container */
+.teacher-dashboard {
+  width: 100%;
+  min-height: 100vh;
+  padding: 50px 30px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  backdrop-filter: blur(14px);
+  background: rgba(255, 255, 255, 0.20);
+}
+
+/* Heading */
 .teacher-dashboard h2 {
-  color: #2c3e50;
-  text-align: center;
-  margin-bottom: 30px;
+  font-size: 36px;
+  color: #ffffff;
+  font-weight: 700;
+  text-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
+  margin-bottom: 25px;
 }
 
+/* Table container with glass effect */
 .table-container {
+  width: 90%;
+  max-width: 1200px;
   overflow-x: auto;
-  margin: 20px 0;
-  background: rgba(255,255,255,0.96);
-  border-radius: 12px;
-  box-shadow: 0 8px 28px rgba(18,32,58,0.08);
-  padding: 22px;
+
+  background: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(10px);
+  border-radius: 18px;
+  padding: 24px;
+
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
 }
 
+/* Table */
 table {
   width: 100%;
   border-collapse: collapse;
-  margin: 0 auto;
 }
 
 th, td {
-  border: 1px solid #ddd;
-  padding: 12px;
+  padding: 14px 16px;
   text-align: left;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
 }
 
 th {
-  background-color: #f8f9fa;
-  color: #2c3e50;
+  background: rgba(255, 255, 255, 0.7);
   font-weight: 600;
+  font-size: 17px;
+  color: #2c3e50;
 }
 
 tr:nth-child(even) {
-  background-color: #f8f9fa;
+  background: rgba(255, 255, 255, 0.35);
 }
 
+/* Editable cells */
 .editable {
   cursor: pointer;
-  transition: background-color 0.2s;
+  position: relative;
+  transition: 0.2s;
 }
 
 .editable:hover {
-  background-color: #e3f2fd;
+  background: rgba(0, 123, 255, 0.15);
 }
 
 .editable input {
-  width: 60px;
-  padding: 4px 8px;
+  width: 70px;
+  padding: 5px;
   border: 2px solid #007bff;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.editable::after {
+  content: "Click to Edit";
+  position: absolute;
+  bottom: -22px;
+  left: 10px;
+  background: #000;
+  color: #fff;
+  font-size: 11px;
+  padding: 4px 6px;
   border-radius: 4px;
-  font-size: 14px;
+  opacity: 0;
+  transition: 0.2s;
 }
 
-.editable input:focus {
-  outline: none;
-  box-shadow: 0 0 0 2px rgba(0,123,255,0.25);
+.editable:hover::after {
+  opacity: 0.8;
 }
 
+/* Subject rows */
 .subjects-cell {
   padding: 0 !important;
 }
 
 .subject-row {
-  padding: 12px;
-  border-bottom: 1px solid #eee;
-}
-
-.subject-row:last-child {
-  border-bottom: none;
+  padding: 14px;
+  border-bottom: 1px solid #ddd;
 }
 
 .subject-name {
-  font-weight: 600;
+  font-weight: 700;
+  font-size: 18px;
   color: #2c3e50;
-  font-size: 1.1em;
-  margin-bottom: 8px;
-  display: block;
 }
 
 .subject-data {
@@ -95,57 +129,32 @@ tr:nth-child(even) {
 }
 
 .data-item {
-  background: #f8f9fa;
-  padding: 6px 12px;
-  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.5);
+  padding: 8px 12px;
+  border-radius: 7px;
   min-width: 120px;
+  transition: 0.2s;
 }
 
-.data-item.editable:hover {
-  background: #e3f2fd;
+.data-item:hover {
+  background: rgba(0, 123, 255, 0.15);
 }
 
-.mark-value, .attendance-value {
-  color: #2c3e50;
-  font-weight: 500;
-}
-
-.data-item input {
-  width: 60px;
-  padding: 2px 6px;
-  margin-left: 8px;
-}
-
+/* Logout button */
 .logout-btn {
-  background: #e74c3c;
-  color: white;
+  margin-top: 30px;
+  background: #ff4d4d;
+  color: #fff;
+  padding: 12px 26px;
+  font-size: 18px;
   border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
+  border-radius: 8px;
   cursor: pointer;
-  font-size: 16px;
-  margin: 20px auto;
-  display: block;
+  font-weight: 600;
+  box-shadow: 0 6px 20px rgba(255, 0, 0, 0.25);
+  transition: 0.3s;
 }
 
 .logout-btn:hover {
-  background: #c0392b;
-}
-
-/* Add instruction tooltip */
-.editable::after {
-  content: 'Click to edit';
-  position: absolute;
-  background: #333;
-  color: white;
-  padding: 4px 8px;
-  border-radius: 4px;
-  font-size: 12px;
-  opacity: 0;
-  transition: opacity 0.2s;
-  pointer-events: none;
-}
-
-.editable:hover::after {
-  opacity: 0.9;
+  background: #d63031;
 }
