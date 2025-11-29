@@ -1,76 +1,82 @@
-/* Modern Redesigned Dashboard CSS */
+/* ============================
+   Dashboard + Unsplash Background
+   ============================ */
 
 :root {
-  --bg: #f5f7fb;
-  --card-bg: #ffffff;
+  --bg-overlay: rgba(255,255,255,0.85);
+  --card-bg: rgba(255, 255, 255, 0.9);
   --primary: #4a90e2;
   --primary-dark: #357ab8;
   --text-dark: #1e2a37;
   --text-light: #6c7a8a;
-  --shadow: 0 4px 12px rgba(0,0,0,0.08);
-  --radius: 14px;
+  --shadow: 0 8px 22px rgba(0,0,0,0.12);
+  --radius: 16px;
 }
 
 body {
-  background: var(--bg);
+  margin: 0; padding: 0;
   font-family: "Poppins", sans-serif;
+
+  background: url('src\manki-kim-PH5DULat9tE-unsplash.jpg') no-repeat center center fixed;
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: #f5f7fb; /* fallback */
 }
 
 .dashboard {
-  padding: 40px 20px;
+  padding: 50px 20px;
   max-width: 1300px;
   margin: 0 auto;
-  animation: fadeIn 0.6s ease-in-out;
+  backdrop-filter: blur(6px);
+  background: var(--bg-overlay);
+  border-radius: var(--radius);
+  animation: fadeIn 0.7s ease;
 }
 
+/* Title */
 .dashboard h2 {
   color: var(--text-dark);
   text-align: center;
-  margin-bottom: 35px;
-  font-size: 32px;
+  margin-bottom: 40px;
+  font-size: 34px;
   font-weight: 700;
 }
 
+/* Section Title */
 h3 {
   color: var(--text-dark);
-  text-align: left;
-  margin-bottom: 15px;
-  font-size: 22px;
+  margin-bottom: 20px;
+  font-size: 24px;
   font-weight: 600;
 }
 
-/* Stats Section */
+/* Stats Cards Section */
 .subject-stats {
   margin: 40px 0;
 }
-
 .stats-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 25px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 28px;
 }
-
 .stat-card {
   background: var(--card-bg);
   border-radius: var(--radius);
-  padding: 20px;
+  padding: 22px;
   box-shadow: var(--shadow);
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
-
 .stat-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+  transform: translateY(-8px);
+  box-shadow: 0 10px 28px rgba(0,0,0,0.18);
 }
-
 .stat-card h4 {
   color: var(--primary);
   margin-bottom: 14px;
   font-size: 20px;
-  border-left: 5px solid var(--primary);
-  padding-left: 10px;
+  border-left: 6px solid var(--primary);
+  padding-left: 12px;
 }
-
 .stat-details p {
   display: flex;
   justify-content: space-between;
@@ -78,13 +84,12 @@ h3 {
   color: var(--text-light);
   font-size: 15px;
 }
-
 .stat-details span {
   font-weight: 700;
   color: var(--text-dark);
 }
 
-/* Chart */
+/* Chart Container */
 .chart-container {
   background: var(--card-bg);
   border-radius: var(--radius);
@@ -92,11 +97,9 @@ h3 {
   margin-top: 40px;
   box-shadow: var(--shadow);
 }
-
 .chart-container h3 {
-  margin-top: 0;
-  margin-bottom: 20px;
-  font-size: 24px;
+  margin: 0 0 15px 0;
+  font-size: 22px;
   color: var(--text-dark);
 }
 
@@ -105,23 +108,29 @@ h3 {
   background: var(--primary);
   color: white;
   border: none;
-  padding: 12px 26px;
+  padding: 13px 30px;
   border-radius: 50px;
   cursor: pointer;
-  font-size: 17px;
+  font-size: 18px;
   font-weight: 600;
-  margin: 30px auto 0;
+  margin: 35px auto 0;
   display: block;
   transition: background 0.3s ease, transform 0.2s ease;
 }
-
 .logout-btn:hover {
   background: var(--primary-dark);
-  transform: scale(1.05);
+  transform: scale(1.07);
 }
 
-/* Fade-in Animation */
+/* Fade Animation */
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(10px); }
   to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+  .dashboard { padding: 30px 15px; }
+  .dashboard h2 { font-size: 28px; }
+  .chart-container { padding: 20px; }
 }
