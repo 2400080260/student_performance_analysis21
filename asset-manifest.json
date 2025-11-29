@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/student_performance_analysis21/static/css/main.c51b4f67.css",
-    "main.js": "/student_performance_analysis21/static/js/main.66865afd.js",
+    "main.css": "/student_performance_analysis21/static/css/main.c21bf51c.css",
+    "main.js": "/student_performance_analysis21/static/js/main.fa5c4751.js",
     "static/js/453.82dd7163.chunk.js": "/student_performance_analysis21/static/js/453.82dd7163.chunk.js",
     "static/media/teacher-background-f2xrvs0eixuq26u9.jpg": "/student_performance_analysis21/static/media/teacher-background-f2xrvs0eixuq26u9.4418acc315b28db0568c.jpg",
     "index.html": "/student_performance_analysis21/index.html",
-    "main.c51b4f67.css.map": "/student_performance_analysis21/static/css/main.c51b4f67.css.map",
-    "main.66865afd.js.map": "/student_performance_analysis21/static/js/main.66865afd.js.map",
+    "main.c21bf51c.css.map": "/student_performance_analysis21/static/css/main.c21bf51c.css.map",
+    "main.fa5c4751.js.map": "/student_performance_analysis21/static/js/main.fa5c4751.js.map",
     "453.82dd7163.chunk.js.map": "/student_performance_analysis21/static/js/453.82dd7163.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c51b4f67.css",
-    "static/js/main.66865afd.js"
+    "static/css/main.c21bf51c.css",
+    "static/js/main.fa5c4751.js"
   ]
 }
