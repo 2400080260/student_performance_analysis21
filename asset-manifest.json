@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/student_performance_analysis21/static/css/main.c21bf51c.css",
+    "main.css": "/student_performance_analysis21/static/css/main.151719d1.css",
     "main.js": "/student_performance_analysis21/static/js/main.60bc407d.js",
     "static/js/453.82dd7163.chunk.js": "/student_performance_analysis21/static/js/453.82dd7163.chunk.js",
     "static/media/teacher-background-f2xrvs0eixuq26u9.jpg": "/student_performance_analysis21/static/media/teacher-background-f2xrvs0eixuq26u9.4418acc315b28db0568c.jpg",
     "index.html": "/student_performance_analysis21/index.html",
-    "main.c21bf51c.css.map": "/student_performance_analysis21/static/css/main.c21bf51c.css.map",
+    "main.151719d1.css.map": "/student_performance_analysis21/static/css/main.151719d1.css.map",
     "main.60bc407d.js.map": "/student_performance_analysis21/static/js/main.60bc407d.js.map",
     "453.82dd7163.chunk.js.map": "/student_performance_analysis21/static/js/453.82dd7163.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c21bf51c.css",
+    "static/css/main.151719d1.css",
     "static/js/main.60bc407d.js"
   ]
 }
