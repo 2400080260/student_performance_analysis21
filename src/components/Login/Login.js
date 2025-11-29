@@ -126,7 +126,11 @@ const Login = () => {
 
   return (
     <div className="container login-page">
-      <h1>Student Performance Analysis</h1>
+      <header className="app-header">
+        <div className="logo">AMS</div>
+        <h1>AMS Performance Analysis</h1>
+        <p className="subtitle">Analytics & Monitoring System</p>
+      </header>
       <div className="form-container">
         <div className="form-header">
           <button 

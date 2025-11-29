@@ -1,0 +1,18 @@
+.debug-container {
+  max-width: 1000px;
+  margin: 20px auto;
+  background: #fff;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+.debug-actions { margin-bottom: 12px; }
+.debug-actions button { margin-right: 8px; padding: 8px 12px; }
+
+.debug-list { display: grid; grid-template-columns: 1fr; gap: 12px; }
+.debug-item { border: 1px solid #eee; padding: 12px; border-radius: 6px; background: #fafafa; }
+.debug-key { font-weight: 700; color: #333; margin-bottom: 6px; }
+.debug-value { background: #fff; padding: 12px; border-radius: 4px; max-height: 240px; overflow: auto; }
+.debug-buttons { margin-top: 8px; }
+.debug-buttons button { margin-right: 8px; padding: 6px 10px; }
