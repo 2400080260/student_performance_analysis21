@@ -23,11 +23,12 @@ body {
 
 .dashboard {
   padding: 50px 20px;
-  max-width: 1300px;
-  margin: 0 auto;
-  backdrop-filter: blur(6px);
-  background: var(--bg-overlay);
-  border-radius: var(--radius);
+  max-width: 100%;
+  width: 100%;
+  margin: 0;
+  min-height: 100vh;
+  backdrop-filter: blur(2px);
+  background: rgba(255,255,255,0.65);
   animation: fadeIn 0.7s ease;
 }
 
@@ -56,12 +57,14 @@ h3 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 28px;
+  max-width: 100%;
+  padding: 0 40px;
 }
 .stat-card {
-  background: var(--card-bg);
+  background: rgba(255,255,255,0.92);
   border-radius: var(--radius);
   padding: 22px;
-  box-shadow: var(--shadow);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 .stat-card:hover {
@@ -89,11 +92,13 @@ h3 {
 
 /* Chart Container */
 .chart-container {
-  background: var(--card-bg);
+  background: rgba(255,255,255,0.92);
   border-radius: var(--radius);
-  padding: 30px;
+  padding: 30px 40px;
   margin-top: 40px;
-  box-shadow: var(--shadow);
+  margin-left: 40px;
+  margin-right: 40px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
 }
 .chart-container h3 {
   margin: 0 0 15px 0;
