@@ -1,7 +1,11 @@
 .teacher-dashboard {
-  padding: 20px;
+  padding: 48px 20px;
   max-width: 1200px;
   margin: 0 auto;
+  /* soft diagonal pattern background (SVG data URI) */
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1200' height='800' viewBox='0 0 1200 800'><defs><linearGradient id='tg' x1='0' x2='1'><stop stop-color='%23fff7f0' offset='0'/><stop stop-color='%23f0fbff' offset='1'/></linearGradient></defs><rect width='100%' height='100%' fill='url(%23tg)'/><pattern id='p' width='80' height='80' patternUnits='userSpaceOnUse'><path d='M0 80 L80 0' stroke='%23e6f0ff' stroke-width='1' stroke-opacity='0.14'/></pattern><rect width='100%' height='100%' fill='url(%23p)' opacity='0.6'/></svg>");
+  background-size: cover;
+  background-position: center;
 }
 
 .teacher-dashboard h2 {
@@ -13,10 +17,10 @@
 .table-container {
   overflow-x: auto;
   margin: 20px 0;
-  background: white;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  padding: 20px;
+  background: rgba(255,255,255,0.96);
+  border-radius: 12px;
+  box-shadow: 0 8px 28px rgba(18,32,58,0.08);
+  padding: 22px;
 }
 
 table {
