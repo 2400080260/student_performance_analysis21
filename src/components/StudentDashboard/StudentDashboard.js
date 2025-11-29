@@ -71,7 +71,16 @@ const StudentDashboard = () => {
   };
 
   return (
-    <div className="dashboard">
+    <div 
+      className="dashboard"
+      style={{
+        backgroundImage: `url('${process.env.PUBLIC_URL}/manki-kim-PH5DULat9tE-unsplash.jpg')`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundAttachment: 'fixed',
+        backgroundRepeat: 'no-repeat'
+      }}
+    >
       <h2>Welcome, {studentData.name}</h2>
       <div className="subject-stats">
         <h3>Subject-wise Performance</h3>

@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-d
 import Login from './components/Login/Login';
 import StudentDashboard from './components/StudentDashboard/StudentDashboard';
 import TeacherDashboard from './components/TeacherDashboard/TeacherDashboard';
+import Debug from './components/Debug/Debug';
 import './App.css';
 
 function App() {
@@ -53,6 +54,7 @@ function App() {
       <div className="App">
         <Routes>
           <Route path="/" element={<Login />} />
+          <Route path="/debug" element={<Debug />} />
           <Route path="/student-dashboard" element={<StudentDashboard />} />
           <Route path="/teacher-dashboard" element={<TeacherDashboard />} />
           <Route path="*" element={<Navigate to="/" />} />
