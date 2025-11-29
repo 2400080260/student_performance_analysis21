@@ -126,16 +126,7 @@ const TeacherDashboard = () => {
   };
 
   return (
-    <div
-      className="teacher-dashboard"
-      style={{
-        backgroundImage: `linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url('${process.env.PUBLIC_URL}/teacher-background-f2xrvs0eixuq26u9.jpg')`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundAttachment: 'fixed',
-        backgroundRepeat: 'no-repeat'
-      }}
-    >
+    <div className="teacher-dashboard">
       <h2>Teacher Dashboard</h2>
       <div className="table-container">
         <table>

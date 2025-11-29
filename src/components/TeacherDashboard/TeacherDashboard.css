@@ -5,6 +5,13 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+/* Use the source image inside src/ (webpack will bundle this) */
+.teacher-dashboard {
+  /* relative path from this CSS file to src/teacher-background-f2xrvs0eixuq26u9.jpg */
+  background: url('../../teacher-background-f2xrvs0eixuq26u9.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
 /* Glassmorphism container */
 .teacher-dashboard {
   width: 100%;
